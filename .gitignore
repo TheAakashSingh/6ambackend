@@ -15,9 +15,3 @@ error_log
 /storage/tmp
 .DS_Store
 docker-local/
-storage/app/*
-storage/framework/*
-storage/logs/*
-!storage/app/.gitkeep
-!storage/framework/.gitkeep
-!storage/logs/.gitkeep
