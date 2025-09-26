@@ -1,9 +1,9 @@
 @extends('layouts.landing.app')
 @section('title', translate('messages.vendor_registration'))
 @push('css_or_js')
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/toastr.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/view-pages/vendor-registration.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/landing/css/select2.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/toastr.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/view-pages/vendor-registration.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/select2.min.css') }}"/>
 @endpush
 @section('content')
     <section class="m-0 py-5">
@@ -224,13 +224,13 @@
                                 </label>
                                 <label class="image--border position-relative">
                                     <img class="__register-img" id="coverImageViewer"
-                                        src="{{ asset('public/assets/admin/img/upload-img.png') }}" alt="Product thumbnail" />
+                                        src="{{ asset('assets/admin/img/upload-img.png') }}" alt="Product thumbnail" />
                                     <div class="icon-file-group">
                                         <div class="icon-file">
                                             <input type="file" name="cover_photo" id="coverImageUpload"
                                             class="form-control __form-control"
                                             accept=".webp, .jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
-                                            <img src="{{ asset('public/assets/admin/img/pen.png') }}" alt="">
+                                            <img src="{{ asset('assets/admin/img/pen.png') }}" alt="">
                                         </div>
                                     </div>
                                 </label>
@@ -243,13 +243,13 @@
                                         )</small></label>
                                 <label class="image--border position-relative img--100px">
                                     <img class="__register-img" id="logoImageViewer"
-                                        src="{{ asset('public/assets/admin/img/upload-img.png') }}" alt="Product thumbnail" />
+                                        src="{{ asset('assets/admin/img/upload-img.png') }}" alt="Product thumbnail" />
 
                                     <div class="icon-file-group">
                                         <div class="icon-file">
                                             <input type="file" name="logo" id="customFileEg1" class="form-control __form-control"
                                             accept=".webp, .jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" required>
-                                            <img src="{{ asset('public/assets/admin/img/pen.png') }}" alt="">
+                                            <img src="{{ asset('assets/admin/img/pen.png') }}" alt="">
                                         </div>
                                     </div>
                                 </label>
@@ -446,7 +446,7 @@
     @endsection
     @push('script_2')
 
-        <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+        <script src="{{ asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script
             src="https://maps.googleapis.com/maps/api/js?key={{ \App\Models\BusinessSetting::where('key', 'map_api_key')->first()->value }}&libraries=drawing,places&v=3.45.8">
@@ -545,7 +545,7 @@
             });
 
         </script>
-        <script src="{{ asset('public/assets/admin/js/view-pages/vendor-registration.js') }}"></script>
+        <script src="{{ asset('assets/admin/js/view-pages/vendor-registration.js') }}"></script>
             @if(isset($recaptcha) && $recaptcha['status'] == 1)
 
                 <script type="text/javascript">
@@ -572,5 +572,5 @@
 
 
 
-    <script src="{{ asset('public/assets/landing/js/select2.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/select2.min.js') }}"></script>
     @endpush

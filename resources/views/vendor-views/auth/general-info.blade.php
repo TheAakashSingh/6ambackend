@@ -1,11 +1,11 @@
 @extends('layouts.landing.app')
 @section('title', translate('messages.vendor_registration'))
 @push('css_or_js')
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/toastr.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/view-pages/vendor-registration.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/landing/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/toastr.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/view-pages/vendor-registration.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/select2.min.css') }}" />
 
-    <link rel="stylesheet" href="{{asset('public/assets/admin/vendor/icon-set/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/vendor/icon-set/style.css')}}">
 
     <style>
         .password-feedback {
@@ -301,11 +301,11 @@
                                             </label>
                                             <label class="image--border position-relative h-110 min-w-220">
                                                 <img class="__register-img h-110" id="coverImageViewer"
-                                                    src="{{ asset('public/assets/admin/img/upload-img.png') }}"
+                                                    src="{{ asset('assets/admin/img/upload-img.png') }}"
                                                     alt="Product thumbnail" style="display: none" />
                                                 <div class="upload-file__textbox p-2 h-100">
                                                     <img width="34" height="34"
-                                                        src="{{ asset('public/assets/admin/img/document-upload.png') }}"
+                                                        src="{{ asset('assets/admin/img/document-upload.png') }}"
                                                         alt="" class="svg">
                                                     <h6 class="mt-2 text-center font-semibold fs-12">
                                                         <span
@@ -319,7 +319,7 @@
                                                         <input type="file" name="cover_photo" id="coverImageUpload"
                                                             class="form-control __form-control"
                                                             accept=".webp, .jpg, .png, .jpeg|image/*">
-                                                        <img src="{{ asset('public/assets/admin/img/pen.png') }}"
+                                                        <img src="{{ asset('assets/admin/img/pen.png') }}"
                                                             alt="">
                                                     </div>
                                                 </div>
@@ -337,11 +337,11 @@
                                             <label
                                                 class="image--border position-relative img--100px w-100 h-110 max-w-110">
                                                 <img class="__register-img h-110" id="logoImageViewer"
-                                                    src="{{ asset('public/assets/admin/img/upload-img.png') }}"
+                                                    src="{{ asset('assets/admin/img/upload-img.png') }}"
                                                     alt="Product thumbnail" style="display: none" />
                                                 <div class="upload-file__textbox p-2 h-100">
                                                     <img width="34" height="34"
-                                                        src="{{ asset('public/assets/admin/img/document-upload.png') }}"
+                                                        src="{{ asset('assets/admin/img/document-upload.png') }}"
                                                         alt="" class="svg">
                                                     <h6 class="mt-2 text-center font-semibold fs-12">
                                                         <span
@@ -355,7 +355,7 @@
                                                         <input type="file" name="logo" id="customFileEg1"
                                                             class="form-control __form-control"
                                                             accept=".webp, .jpg, .png, .jpeg|image/*">
-                                                        <img src="{{ asset('public/assets/admin/img/pen.png') }}"
+                                                        <img src="{{ asset('assets/admin/img/pen.png') }}"
                                                             alt="">
                                                     </div>
                                                 </div>
@@ -448,9 +448,9 @@
                                                 </div>
                                                 <div>
                                                     <div id="file-assets"
-                                                         data-picture-icon="{{ asset('public/assets/admin/img/picture.svg') }}"
-                                                         data-document-icon="{{ asset('public/assets/admin/img/document.svg') }}"
-                                                         data-blank-thumbnail="{{ asset('public/assets/admin/img/picture.svg') }}">
+                                                         data-picture-icon="{{ asset('assets/admin/img/picture.svg') }}"
+                                                         data-document-icon="{{ asset('assets/admin/img/document.svg') }}"
+                                                         data-blank-thumbnail="{{ asset('assets/admin/img/picture.svg') }}">
                                                     </div>
                                                     <!-- Upload box -->
                                                     <div class="d-flex justify-content-center" id="pdf-container">
@@ -458,7 +458,7 @@
                                                             <input type="file" name="tin_certificate_image" class="document_input" accept=".doc, .pdf, .jpg, .png, .jpeg">
                                                             <div class="textbox">
                                                                 <img width="40" height="40" class="svg"
-                                                                     src="{{ asset('public/assets/admin/img/doc-uploaded.png') }}"
+                                                                     src="{{ asset('assets/admin/img/doc-uploaded.png') }}"
                                                                      alt="">
                                                                 <p class="fs-12 mb-0">Select a file or <span class="font-semibold">Drag & Drop</span>
                                                                     here</p>
@@ -707,11 +707,11 @@
 @endsection
 @push('script_2')
 
-    <script src="{{ asset('public/assets/admin/js/file-preview/pdf.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/file-preview/pdf-worker.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/file-preview/add-multiple-document-upload.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/file-preview/pdf.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/file-preview/pdf-worker.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/file-preview/add-multiple-document-upload.js') }}"></script>
 
-    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key={{ \App\Models\BusinessSetting::where('key', 'map_api_key')->first()->value }}&libraries=drawing,places&v=3.45.8">
     </script>
@@ -838,7 +838,7 @@
             });
         });
     </script>
-    <script src="{{ asset('public/assets/admin/js/view-pages/vendor-registration.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/view-pages/vendor-registration.js') }}"></script>
     @if (isset($recaptcha) && $recaptcha['status'] == 1)
         <script type="text/javascript">
             "use strict";
@@ -1006,7 +1006,7 @@
 
         });
     </script>
-    <script src="{{ asset('public/assets/landing/js/select2.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/select2.min.js') }}"></script>
 
     <script>
         // ---- file upload with textbox

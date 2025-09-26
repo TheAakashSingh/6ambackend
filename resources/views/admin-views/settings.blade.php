@@ -85,7 +85,7 @@
                             class="avatar avatar-xxl avatar-circle avatar-border-lg avatar-uploader profile-cover-avatar"
                             for="avatarUploader">
                             <img id="viewer"
-                                 data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
+                                 data-onerror-image="{{asset('assets/admin/img/160x160/img1.jpg')}}"
                                  class="avatar-img onerror-image"
                                  src="{{ auth('admin')->user()->toArray()['image_full_url'] }}"
                                  alt="Image">

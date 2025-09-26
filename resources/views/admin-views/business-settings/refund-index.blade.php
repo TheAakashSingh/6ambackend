@@ -9,7 +9,7 @@
         <div class="page-header">
             <h1 class="page-header-title mr-3">
                 <span class="page-header-icon">
-                    <img src="{{ asset('public/assets/admin/img/business.png') }}" class="w--26" alt="">
+                    <img src="{{ asset('assets/admin/img/business.png') }}" class="w--26" alt="">
                 </span>
                 <span>
                     {{ translate('messages.business_setup') }}
@@ -283,7 +283,7 @@
 
 @endsection
 @push('script_2')
-    <script src="{{asset('public/assets/admin/js/view-pages/business-settings-refund-reasons-page.js')}}"></script>
+    <script src="{{asset('assets/admin/js/view-pages/business-settings-refund-reasons-page.js')}}"></script>
 <script>
 
     $('.refund-mode').on('click', function(event){

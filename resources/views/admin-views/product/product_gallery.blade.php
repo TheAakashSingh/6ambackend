@@ -14,7 +14,7 @@
                 <div class="col-md-9 col-12">
                     <h1 class="page-header-title">
                         <span class="page-header-icon">
-                            <img src="{{asset('public/assets/admin/img/group.png')}}" class="w--22" alt="">
+                            <img src="{{asset('assets/admin/img/group.png')}}" class="w--22" alt="">
                         </span>
                         <span>
                             {{translate('messages.Product_Gallery')}} <span class="badge badge-soft-dark ml-2" id="foodCount"></span>
@@ -102,7 +102,7 @@
           },
           language: {
             zeroRecords: '<div class="text-center p-4">' +
-                '<img class="w-7rem mb-3" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">' +
+                '<img class="w-7rem mb-3" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">' +
 
                 '</div>'
           }

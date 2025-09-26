@@ -242,7 +242,7 @@
                                                 <div class="img w--70px ">
                                                     <img src="{{ $module?->icon_full_url }}"
 
-                                                         data-onerror-image="{{asset('public/assets/admin/img/new-img/module/e-shop.svg')}}"
+                                                         data-onerror-image="{{asset('assets/admin/img/new-img/module/e-shop.svg')}}"
                                                          alt="new-img" class="mw-100 onerror-image">
                                                 </div>
                                                 <div>
@@ -309,13 +309,13 @@
 <div class="toggle-tour">
     <a href="https://youtube.com/playlist?list=PLLFMbDpKMZBxgtX3n3rKJvO5tlU8-ae2Y" target="_blank"
        class="d-flex align-items-center gap-10px">
-        <img src="{{ asset('public/assets/admin/img/tutorial.svg') }}" alt="">
+        <img src="{{ asset('assets/admin/img/tutorial.svg') }}" alt="">
         <span>
             <span class="text-capitalize">{{ translate('Turotial') }}</span>
         </span>
     </a>
     <div class="d-flex align-items-center gap-10px restart-Tour">
-        <img src="{{ asset('public/assets/admin/img/tour.svg') }}" alt="">
+        <img src="{{ asset('assets/admin/img/tour.svg') }}" alt="">
         <span>
             <span class="text-capitalize">{{ translate('Tour') }}</span>
         </span>

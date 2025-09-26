@@ -8,7 +8,7 @@
         <div class="d-flex flex-wrap justify-content-between">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/landing.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{ translate('messages.react_landing_page') }}
@@ -57,7 +57,7 @@
                             <div class="row g-3 lang_form" id="default-form">
                                 <div class="col-sm-12">
                                     <label for="testimonial_title" class="form-label">{{translate('Title')}} ({{ translate('messages.default') }})<span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_50_characters') }}">
-                                        <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                        <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                     </span></label>
                             <input id="testimonial_title" type="text"  maxlength="50" name="testimonial_title[]" class="form-control" value="{{$testimonial_title?->getRawOriginal('value')??''}}" placeholder="{{translate('messages.title_here...')}}">
                                 </div>
@@ -79,7 +79,7 @@
                                     <div class="row g-3 d-none lang_form" id="{{$lang}}-form">
                                         <div class="col-sm-12">
                                             <label for="testimonial_title{{$lang}}" class="form-label">{{translate('Title')}} ({{strtoupper($lang)}})<span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_50_characters') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span></label>
                                     <input type="text" id="testimonial_title{{$lang}}"  maxlength="50" name="testimonial_title[]" class="form-control" value="{{ $testimonial_title_translate[$lang]['value']?? '' }}" placeholder="{{translate('messages.title_here...')}}">
                                         </div>
@@ -123,7 +123,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <label for="review" class="form-label">{{translate('messages.review')}}<span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_140_characters') }}">
-                                            <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                            <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                         </span></label>
                                         <textarea id="review" name="review"  maxlength="140" placeholder="{{translate('Very Good Company')}}" class="form-control h92px"></textarea>
                                     </div>

@@ -10,7 +10,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/store.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/store.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.add_new_store')}}
@@ -120,8 +120,8 @@
                                     </label>
                                     <label class="text-center position-relative">
                                         <img class="img--110 min-height-170px min-width-170px onerror-image image--border" id="viewer"
-                                        data-onerror-image="{{ asset('public/assets/admin/img/upload.png') }}"
-                                            src="{{ asset('public/assets/admin/img/upload-img.png') }}"
+                                        data-onerror-image="{{ asset('assets/admin/img/upload.png') }}"
+                                            src="{{ asset('assets/admin/img/upload-img.png') }}"
                                             alt="logo image" />
                                         <div class="icon-file-group">
                                             <div class="icon-file">
@@ -141,8 +141,8 @@
                                     </label>
                                     <label class="text-center position-relative">
                                         <img class="img--vertical min-height-170px min-width-170px onerror-image image--border" id="coverImageViewer"
-                                        data-onerror-image="{{ asset('public/assets/admin/img/upload-img.png') }}"
-                                            src="{{ asset('public/assets/admin/img/upload-img.png') }}"
+                                        data-onerror-image="{{ asset('assets/admin/img/upload-img.png') }}"
+                                            src="{{ asset('assets/admin/img/upload-img.png') }}"
                                             alt="Fav icon" />
                                         <div class="icon-file-group">
                                             <div class="icon-file">
@@ -161,7 +161,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title m-0 d-flex align-items-center">
-                                <img class="mr-2 align-self-start w--20" src="{{asset('public/assets/admin/img/resturant.png')}}" alt="instructions">
+                                <img class="mr-2 align-self-start w--20" src="{{asset('assets/admin/img/resturant.png')}}" alt="instructions">
                                 <span>{{translate('store_information')}}</span>
                             </h4>
                         </div>
@@ -390,9 +390,9 @@
                                         </div>
                                         <div>
                                             <div id="file-assets"
-                                                 data-picture-icon="{{ asset('public/assets/admin/img/picture.svg') }}"
-                                                 data-document-icon="{{ asset('public/assets/admin/img/document.svg') }}"
-                                                 data-blank-thumbnail="{{ asset('public/assets/admin/img/picture.svg') }}">
+                                                 data-picture-icon="{{ asset('assets/admin/img/picture.svg') }}"
+                                                 data-document-icon="{{ asset('assets/admin/img/document.svg') }}"
+                                                 data-blank-thumbnail="{{ asset('assets/admin/img/picture.svg') }}">
                                             </div>
                                             <!-- Upload box -->
                                             <div class="d-flex justify-content-center" id="pdf-container">
@@ -400,7 +400,7 @@
                                                     <input type="file" name="tin_certificate_image" class="document_input" accept=".doc, .pdf, .jpg, .png, .jpeg">
                                                     <div class="textbox">
                                                         <img width="40" height="40" class="svg"
-                                                             src="{{ asset('public/assets/admin/img/doc-uploaded.png') }}"
+                                                             src="{{ asset('assets/admin/img/doc-uploaded.png') }}"
                                                              alt="">
                                                         <p class="fs-12 mb-0">Select a file or <span class="font-semibold">Drag & Drop</span>
                                                             here</p>
@@ -428,11 +428,11 @@
 
 @push('script_2')
 
-    <script src="{{ asset('public/assets/admin/js/file-preview/pdf.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/file-preview/pdf-worker.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/file-preview/add-multiple-document-upload.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/file-preview/pdf.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/file-preview/pdf-worker.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/file-preview/add-multiple-document-upload.js') }}"></script>
 
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key={{\App\Models\BusinessSetting::where('key', 'map_api_key')->first()->value}}&libraries=places&callback=initMap&v=3.45.8"></script>
 
@@ -479,7 +479,7 @@
             groupClassName: 'col-lg-2 col-md-4 col-sm-4 col-6',
             maxFileSize: '',
             placeholderImage: {
-                image: '{{asset('public/assets/admin/img/400x400/img2.jpg')}}',
+                image: '{{asset('assets/admin/img/400x400/img2.jpg')}}',
                 width: '100%'
             },
             dropFileLabel: "Drop Here",
@@ -658,9 +658,9 @@
         })
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src', "{{ asset('public/assets/admin/img/upload.png') }}");
+            $('#viewer').attr('src', "{{ asset('assets/admin/img/upload.png') }}");
             $('#customFileEg1').val(null);
-            $('#coverImageViewer').attr('src', "{{ asset('public/assets/admin/img/upload-img.png') }}");
+            $('#coverImageViewer').attr('src', "{{ asset('assets/admin/img/upload-img.png') }}");
             $('#coverImageUpload').val(null);
             $('#choice_zones').val(null).trigger('change');
             $('#module_id').val(null).trigger('change');

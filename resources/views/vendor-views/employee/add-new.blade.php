@@ -10,7 +10,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{ asset('public/assets/admin/img/role.png') }}" class="w--26" alt="">
+                    <img src="{{ asset('assets/admin/img/role.png') }}" class="w--26" alt="">
                 </span>
                 <span>
                     {{ translate('messages.add_new_employee') }}
@@ -72,8 +72,8 @@
                                     </h5>
                                     <div class="text-center my-auto">
                                         <img class="store-banner onerror-image" id="viewer"
-                                             data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                                             src="{{ asset('public/assets/admin/img/160x160/img1.jpg') }}"
+                                             data-onerror-image="{{asset('assets/admin/img/160x160/img1.jpg')}}"
+                                             src="{{ asset('assets/admin/img/160x160/img1.jpg') }}"
                                             alt="Employee thumbnail" />
                                     </div>
                                     <div class="form-group mt-3 mb-0">
@@ -180,7 +180,7 @@
     <script>
         "use strict";
         $('#reset_btn').click(function() {
-            $('#viewer').attr('src', '{{ asset('public/assets/admin/img/160x160/img1.jpg') }}');
+            $('#viewer').attr('src', '{{ asset('assets/admin/img/160x160/img1.jpg') }}');
         })
         $("#customFileUpload").change(function () {
     readURL(this, 'viewer');

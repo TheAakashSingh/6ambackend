@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{asset('public/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -14,7 +14,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--22" alt="">
+                    <img src="{{asset('assets/admin/img/edit.png')}}" class="w--22" alt="">
                 </span>
                 <span>
                     {{ request()->product_gellary == 1 ? translate('Add_item') : translate('item_update') }}
@@ -645,9 +645,9 @@
 @endpush
 
 @push('script_2')
-    <script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
-    <script src="{{asset('public/assets/admin')}}/js/view-pages/vendor/product-index.js"></script>
+    <script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/admin')}}/js/view-pages/vendor/product-index.js"></script>
     <script>
         "use strict";
 
@@ -890,7 +890,7 @@
                 groupClassName: 'col-lg-2 col-md-4 col-sm-4 col-6',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: "{{asset('public/assets/admin/img/400x400/img2.jpg')}}",
+                    image: "{{asset('assets/admin/img/400x400/img2.jpg')}}",
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

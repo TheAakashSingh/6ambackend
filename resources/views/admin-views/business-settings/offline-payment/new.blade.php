@@ -108,7 +108,7 @@
             <div class="d-flex align-items-center flex-column gap-3 text-center">
                 <h3>{{translate('Offline Payment')}}
                 </h3>
-                <img width="100" src="{{asset('public/assets/admin/img/offline_payment.png')}}" alt="">
+                <img width="100" src="{{asset('assets/admin/img/offline_payment.png')}}" alt="">
                 <p class="text-muted">{{translate('This view is from the user app.')}} <br class="d-none d-sm-block"> {{translate('This is how customer will see in the app')}}</p>
             </div>
 
@@ -119,7 +119,7 @@
                     <h4 id="payment_modal_method_name"><span></span></h4>
                     <div class="text-primary d-flex align-items-center gap-2">
                         {{translate('Pay on this account')}}
-                        <img width="25" src="{{asset('public/assets/admin/img/tick.png')}}" alt="">
+                        <img width="25" src="{{asset('assets/admin/img/tick.png')}}" alt="">
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@
 
 @push('script_2')
 
-    <script src="{{asset('public/assets/admin/js/view-pages/offline-payment.js')}}"></script>
+    <script src="{{asset('assets/admin/js/view-pages/offline-payment.js')}}"></script>
 
     <script>
         "use strict";

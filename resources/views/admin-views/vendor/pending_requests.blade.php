@@ -95,8 +95,8 @@
                             <td>
                                 <div>
                                     <a href="{{route('admin.store.view', $store->id)}}" class="table-rest-info" alt="view store">
-                                        <img class="img--60 circle onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                                        src="{{ $store['logo_full_url'] ?? asset('public/assets/admin/img/160x160/img1.jpg') }}" >
+                                        <img class="img--60 circle onerror-image" data-onerror-image="{{asset('assets/admin/img/160x160/img1.jpg')}}"
+                                        src="{{ $store['logo_full_url'] ?? asset('assets/admin/img/160x160/img1.jpg') }}" >
                                         <div class="info"><div class="text--title">
                                             {{Str::limit($store->name,20,'...')}}
                                             </div>

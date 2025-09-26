@@ -9,7 +9,7 @@
         <div class="page-header">
             <h1 class="page-header-title mr-3">
                 <span class="page-header-icon">
-                    <img src="{{ asset('public/assets/admin/img/business.png') }}" class="w--26" alt="">
+                    <img src="{{ asset('assets/admin/img/business.png') }}" class="w--26" alt="">
                 </span>
                 <span>
                     {{ translate('messages.business_settings') }}
@@ -389,7 +389,7 @@
                                             </label>
                                             <label class="text-center position-relative">
                                                 <img class="img--vertical onerror-image image--border" id="viewer"
-                                                    data-onerror-image="{{ asset('public/assets/admin/img/upload-img.png') }}"
+                                                    data-onerror-image="{{ asset('assets/admin/img/upload-img.png') }}"
                                                     src="{{\App\CentralLogics\Helpers::get_full_url('business', $logo?->value?? '', $logo?->storage[0]?->value ?? 'public','upload_image')}}"
                                                     alt="logo image" />
                                                 <div class="icon-file-group">
@@ -410,7 +410,7 @@
                                             </label>
                                             <label class="text-center position-relative">
                                                 <img class="img--133 onerror-image image--border" id="iconViewer"
-                                                    data-onerror-image="{{ asset('public/assets/admin/img/upload-img.png') }}"
+                                                    data-onerror-image="{{ asset('assets/admin/img/upload-img.png') }}"
                                                     src="{{\App\CentralLogics\Helpers::get_full_url('business', $icon?->value?? '', $icon?->storage[0]?->value ?? 'public','upload_image')}}"
                                                     alt="Fav icon" />
                                                 <div class="icon-file-group">
@@ -752,7 +752,7 @@
                                         <label class="form-label text-capitalize"
                                             for="digit_after_decimal_point">{{ translate('messages.Digit after decimal point') }}
                                             <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('how_many_fractional_digit_to_show_after_decimal_value') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span>
                                         </label>
                                         <input type="number" name="digit_after_decimal_point" class="form-control"
@@ -767,7 +767,7 @@
                                         <label class="form-label"
                                             for="footer_text">{{ translate('Copyright Text') }}
                                             <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.make_visitors_aware_of_your_business‘s_rights_&_legal_information.') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span>
                                         </label>
                                         <textarea type="text" id="footer_text" name="footer_text" class="form-control h--45"
@@ -780,7 +780,7 @@
                                         <label class="form-label"
                                             for="cookies_text">{{ translate('Cookies Text') }}
                                             <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.make_visitors_aware_of_your_business‘s_rights_&_legal_information.') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span>
                                         </label>
                                         <textarea type="text"  id="cookies_text" name="cookies_text" class="form-control h--45"
@@ -805,7 +805,7 @@
                                             for="admin_commission">
                                             {{ translate('messages.Default_Commission_Rate_On_Order') }} (%)
                                             <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Set_up_‘Default_Commission_Rate’_on_every_Order._Admin_can_also_set_store-wise_different_commission_rates_from_respective_store_settings.') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span>
                                         </label>
                                         <input type="number" name="admin_commission" class="form-control"
@@ -821,7 +821,7 @@
                                         for="admin_comission_in_delivery_charge">
                                         {{translate('messages.Commission_Rate_On_Delivery_Charge')}} (%)
                                             <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Set_a_default_‘Commission_Rate’_for_freelance_deliverymen_(under_admin)_on_every_deliveryman. ') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span>
                                         </label>
                                             <input type="number" name="admin_comission_in_delivery_charge" class="form-control" id="admin_comission_in_delivery_charge"  placeholder="{{ translate('messages.Ex:_10') }}"
@@ -836,7 +836,7 @@
                                         <label class="input-label text-capitalize d-flex alig-items-center"><span
                                                 class="line--limit-1">{{ translate('messages.Who_Will_Confirm_Order?') }}
                                             <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.After_a_customer_order_placement,_Admin_can_define_who_will_confirm_the_order_first-_Deliveryman_or_Store?_For_example,_if_you_choose_‘Delivery_man’,_the_deliveryman_nearby_will_confirm_the_order_and_forward_it_to_the_related_store_to_process_the_order._It_works_vice-versa_if_you_choose_‘Store’.') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span>
                                             </span>
                                         </label>
@@ -939,7 +939,7 @@
                                         <label class="input-label text-capitalize d-flex alig-items-center"><span
                                             class="line--limit-1">{{ translate('Order_Notification_Type') }}
                                         <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('For_Firebase,_a_single_real-time_notification_will_be_sent_upon_order_placement,_with_no_repetition._For_the_Manual_option,_notifications_will_appear_at_10-second_intervals_until_the_order_is_viewed.') }}" >
-                                            <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                            <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                         </span>
                                         </span>
                                         </label>
@@ -1273,7 +1273,7 @@
                                                 <label class="input-label text-capitalize d-flex alig-items-center"><span
                                                     class="line--limit-1">{{ translate('Can_Pay_the_Rest_Amount_using') }}
                                                 <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Set_the_method(s)_that_customers_can_pay_the_remainder_after_partial_payment.') }}" alt="">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                                 </span>
                                                 </span>
                                             </label>
@@ -1414,7 +1414,7 @@
                     <div class="max-349 mx-auto mb-20">
                         <div>
                             <div class="text-center">
-                                <img width="80" src="{{  asset('public/assets/admin/img/modal/currency.png') }}" class="mb-20">
+                                <img width="80" src="{{  asset('assets/admin/img/modal/currency.png') }}" class="mb-20">
                                 <h5 class="modal-title"></h5>
                             </div>
                             <div class="text-center" >

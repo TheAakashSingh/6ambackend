@@ -48,7 +48,7 @@
                         </div>
                         @foreach ($customers as $key => $customer)
                             <img src="{{ $customer['image_full_url'] }}"
-                                 class="onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}" alt="new-img">
+                                 class="onerror-image" data-onerror-image="{{asset('assets/admin/img/160x160/img2.jpg')}}" alt="new-img">
                         @endforeach
                     </div>
                     <h3 class="title">{{$total_customers}}</h3>
@@ -67,7 +67,7 @@
                         </div>
                         @foreach ($delivery_man as $key => $dm)
                             <img src="{{ $dm['image_full_url'] }}"
-                                 class="onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"
+                                 class="onerror-image" data-onerror-image="{{asset('assets/admin/img/160x160/img2.jpg')}}"
                              alt="new-img">
                         @endforeach
                     </div>
@@ -89,7 +89,7 @@
                             @break
                         @endif
                         <img src="{{ $item['image_full_url'] }}"
-                             class="onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}" alt="new-img">
+                             class="onerror-image" data-onerror-image="{{asset('assets/admin/img/160x160/img2.jpg')}}" alt="new-img">
                         @endforeach
                     </div>
                     <h3 class="title">{{$total_employees}}</h3>
@@ -490,7 +490,7 @@
                         position: point,
                         map: map,
                         title: dm.image,
-                        icon: "{{ asset('public/assets/admin/img/delivery_boy_active.png') }}"
+                        icon: "{{ asset('assets/admin/img/delivery_boy_active.png') }}"
                     });
 
                     dmMarkers[dm.id] = marker;
@@ -538,8 +538,8 @@
                                 itemCount++
                             }
                             const icon = isDMActive ?
-                                "{{ asset('public/assets/admin/img/delivery_boy_active.png') }}" :
-                                "{{ asset('public/assets/admin/img/delivery_boy_map_inactive.png') }}";
+                                "{{ asset('assets/admin/img/delivery_boy_active.png') }}" :
+                                "{{ asset('assets/admin/img/delivery_boy_map_inactive.png') }}";
 
                             const marker = new google.maps.Marker({
                                 position: dmMarkers[item.id].getPosition(),
