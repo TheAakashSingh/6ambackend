@@ -19,7 +19,7 @@ active
                 <div class="row align-items-center py-2">
                     <div class="col-sm mb-2 mb-sm-0">
                         <div class="d-flex align-items-center">
-                            <img src="{{asset('/public/assets/admin/img/store.png')}}" width="24" alt="img">
+                            <img src="{{asset('/assets/admin/img/store.png')}}" width="24" alt="img">
                             <div class="w-0 flex-grow pl-2">
                                 <h1 class="page-header-title mb-0">{{translate('Subscription Package List')}} <span class="badge badge-soft-dark ml-2">{{ $packages->total() > 0 ? $packages->total() : ''  }}</span></h1>
                             </div>
@@ -219,7 +219,7 @@ active
                         </div>
                         @if(count($packages) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>
@@ -233,7 +233,7 @@ active
                 <div class="card">
                     <div class="card-body text-center py-5">
                         <div class="max-w-542 mx-auto py-sm-5 py-4">
-                            <img class="mb-4" src="{{asset('/public/assets/admin/img/empty-subscription.svg')}}" alt="img">
+                            <img class="mb-4" src="{{asset('/assets/admin/img/empty-subscription.svg')}}" alt="img">
                             <h4 class="mb-3">{{translate('Create Subscription Plan')}}</h4>
                             @if ( request()->module == 1)
                                 <p class="mb-4">
@@ -267,7 +267,7 @@ active
                 <div class="max-349 mx-auto mb-20">
                     <div>
                         <div class="text-center">
-                            <img src="{{asset('/public/assets/admin/img/subscription-plan/package-status-disable.png')}}" class="mb-20">
+                            <img src="{{asset('/assets/admin/img/subscription-plan/package-status-disable.png')}}" class="mb-20">
                             <h5 class="modal-title" id="toggle-title"></h5>
                         </div>
                         <div class="text-center" id="toggle-message">
@@ -318,7 +318,7 @@ active
                 <div class="max-349 mx-auto mb-20">
                     <div>
                         <div class="text-center">
-                            <img src="{{asset('/public/assets/admin/img/subscription-plan/tick.png')}}" class="mb-20">
+                            <img src="{{asset('/assets/admin/img/subscription-plan/tick.png')}}" class="mb-20">
                             <h5 class="modal-title" id="toggle-title"></h5>
                         </div>
                         <div class="text-center" id="toggle-message">
@@ -359,7 +359,7 @@ active
                 <div class="max-349 mx-auto mb-20">
                     <div>
                         <div class="text-center">
-                            <img src="{{asset('/public/assets/admin/img/subscription-plan/package-status-disable.png')}}" class="mb-20">
+                            <img src="{{asset('/assets/admin/img/subscription-plan/package-status-disable.png')}}" class="mb-20">
                             <h5 class="modal-title" id="toggle-title"></h5>
                         </div>
                         <div class="text-center" id="toggle-message">

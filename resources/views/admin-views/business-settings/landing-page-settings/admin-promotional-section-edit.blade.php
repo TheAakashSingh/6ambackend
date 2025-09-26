@@ -122,8 +122,8 @@
                                     <label class="upload-img-3 m-0 d-block">
                                         <div class="img">
                                             <img
-                                            src="{{ $banner['image_full_url'] ?? asset('/public/assets/admin/img/upload-4.png') }}" 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
+                                            src="{{ $banner['image_full_url'] ?? asset('/assets/admin/img/upload-4.png') }}" 
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
                                         </div>
                                             <input type="file" name="image"  hidden>
                                     </label>

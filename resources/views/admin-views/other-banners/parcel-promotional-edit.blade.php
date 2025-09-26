@@ -42,7 +42,7 @@
                                                 <div class="img">
                                                     <img class="onerror-image"
 
-                                                        src="{{ $banner->value_full_url ?? asset('/public/assets/admin/img/upload-placeholder.png')}}" data-onerror-image="{{asset('/public/assets/admin/img/upload-placeholder.png')}}" alt="">
+                                                        src="{{ $banner->value_full_url ?? asset('/assets/admin/img/upload-placeholder.png')}}" data-onerror-image="{{asset('/assets/admin/img/upload-placeholder.png')}}" alt="">
                                                 </div>
                                                     <input type="file" name="image"  hidden>
                                             </label>
@@ -72,7 +72,7 @@
     <script src="{{asset('assets/admin')}}/js/view-pages/other-banners.js"></script>
         <script>
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('/public/assets/admin/img/upload-placeholder.png')}}');
+                $('#viewer').attr('src','{{asset('/assets/admin/img/upload-placeholder.png')}}');
             })
         </script>
 @endpush

@@ -18,7 +18,7 @@ active
             <div class="d-flex flex-wrap justify-content-between align-items-center py-2">
                 <div class="flex-grow-1">
                     <div class="d-flex align-items-start">
-                        <img src="{{asset('/public/assets/admin/img/store.png')}}" width="24" alt="img">
+                        <img src="{{asset('/assets/admin/img/store.png')}}" width="24" alt="img">
                         <div class="w-0 flex-grow pl-2">
                             <h1 class="page-header-title">{{ $store->name }} {{translate('Subscription')}} &nbsp; &nbsp;
                                 @if($store?->status == 0 &&  $store?->vendor?->status == 0)
@@ -191,7 +191,7 @@ active
                                     <div class="text-title">{{ $transaction?->store?->name ?? translate('messages.store deleted!') }}
                                         @if ($transaction?->subscription?->status == 1 && $transaction?->subscription?->expiry_date_parsed && $transaction->subscription->expiry_date_parsed->subDays($subscription_deadline_warning_days)->isBefore(now()))
                                         <span title="<div class='text-left'>Expiring Soon <br /> Expiration Date: {{ \App\CentralLogics\Helpers::date_format($transaction->subscription->expiry_date_parsed)  }}</div>" data-toggle="tooltip" data-html="true">
-                                            <img src="{{asset('/public/assets/admin/img/invalid.svg')}}" alt="">
+                                            <img src="{{asset('/assets/admin/img/invalid.svg')}}" alt="">
                                         </span>
                                         @endif
 
@@ -248,7 +248,7 @@ active
                 </div>
                 @if(count($transactions) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

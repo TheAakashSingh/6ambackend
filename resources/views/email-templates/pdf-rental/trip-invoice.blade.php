@@ -11,8 +11,8 @@ $site_direction = \App\CentralLogics\Helpers::system_default_direction();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ translate('Email_Template') }}</title>
 
-    <link rel="stylesheet" href="{{asset('Modules/Rental/public/assets/css/admin/google-font.css')}}">
-    <link rel="stylesheet" href="{{asset('Modules/Rental/public/assets/css/admin/trip-invoice.css')}}">
+    <link rel="stylesheet" href="{{asset('Modules/Rental/assets/css/admin/google-font.css')}}">
+    <link rel="stylesheet" href="{{asset('Modules/Rental/assets/css/admin/trip-invoice.css')}}">
 </head>
 
 

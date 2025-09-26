@@ -34,15 +34,15 @@
                             <h5 class="text-capitalize m-0 text--primary pl-2">
                                 {{translate('Receive_Mail_On_New_Customer_Registration_on_POS')}}
                                 <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('If_a_user_added_through_POS,_they_will_receive_an_automated_confirmation_mail_with_their_email_&_password.')}}">
-                                   <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                   <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                 </span>
                             </h5>
                             <label class="toggle-switch toggle-switch-sm">
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                 data-id="mail-status"
                                 data-type="status"
-                                data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                 data-title-on="{{translate('Want_to_enable_User_POS_Registration_mail?')}}"
                                 data-title-off="{{translate('Want_to_disable_User_POS_Registration_mail?')}}"
                                 data-text-on="<p>{{translate('If_enabled,_customers_will_receive_a_confirmation_email_that_their_registration_was_successfull_and_get_the_email_and_password_in_the_mail.')}}</p>"
@@ -109,7 +109,7 @@
                                     <div>
                                         <h5 class="card-title mb-3">
                                             {{translate('Icon')}}  <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Icon_must_be_1:1.')}}">
-                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                             </span>
                                         </h5>
                                         <label class="custom-file">
@@ -128,7 +128,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">{{translate('Main_Title')}}({{ translate('messages.default') }})
                                                         <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_main_title_within_45_characters')}}">
-                                                            <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                            <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                                         </span>
                                                     </label>
                                                     <input type="text" maxlength="45" name="title[]" value="{{ $data?->getRawOriginal('title') }}" data-id="mail-title" placeholder="{{ translate('Order_has_been_placed_successfully.') }}" class="form-control">
@@ -165,7 +165,7 @@
                                                     <div class="form-group">
                                                        <label class="form-label">{{translate('Main_Title')}}({{strtoupper($lang)}})
                                                             <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_45_characters')}}">
-                                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                                             </span>
                                                         </label>
                                                         <input type="text" maxlength="45" name="title[]"  placeholder="{{ translate('Order_has_been_placed_successfully.') }}" class="form-control" value="{{$translate[$lang]['title']??''}}">
@@ -189,7 +189,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">{{translate('Main_Title')}}
                                                     <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_45_characters')}}">
-                                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                                             </span></label>
                                                     <input type="text" maxlength="45" name="title[]" placeholder="{{ translate('Order_has_been_placed_successfully.') }}"class="form-control">
                                                 </div>

@@ -70,7 +70,7 @@
                 @empty
 
                 <div class="empty-conversation-content d-flex flex-column align-items-center gap-3">
-                    <img width="128" height="128" src="{{asset('/public/assets/admin/img/icons/empty-conversation.png')}}" alt="public">
+                    <img width="128" height="128" src="{{asset('/assets/admin/img/icons/empty-conversation.png')}}" alt="public">
                     <h5 class="text-muted">
                         {{translate('no_conversation_found')}}
                     </h5>

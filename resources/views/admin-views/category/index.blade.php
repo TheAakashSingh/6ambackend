@@ -98,7 +98,7 @@
                                         class="text-danger">* ( {{ translate('messages.ratio') }} 1:1)</small></label>
                                 <label class="text-center my-auto position-relative d-inline-block">
                                     <img class="img--176 border" id="viewer"
-                                        @if (isset($category)) src="{{ asset('storage/app/public/category') }}/{{ $category['image'] }}"
+                                        @if (isset($category)) src="{{ asset('storage/app/category') }}/{{ $category['image'] }}"
                                         @else
                                         src="{{ asset('assets/admin/img/upload-img.png') }}" @endif
                                         alt="image" />
@@ -315,7 +315,7 @@
             </div>
             @if (count($categories) === 0)
                 <div class="empty--data">
-                    <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                    <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                     <h5>
                         {{ translate('no_data_found') }}
                     </h5>

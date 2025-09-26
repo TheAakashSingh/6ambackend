@@ -34,7 +34,7 @@
         <div class="auth-wrapper-left">
             <div class="auth-left-cont">
                 @php($store_logo = \App\Models\BusinessSetting::where(['key' => 'logo'])->first())
-                <img class="onerror-image"  data-onerror-image="{{asset('/public/assets/admin/img/favicon.png')}}"
+                <img class="onerror-image"  data-onerror-image="{{asset('/assets/admin/img/favicon.png')}}"
                 src="{{\App\CentralLogics\Helpers::get_full_url('business', $store_logo?->value?? '', $store_logo?->storage[0]?->value ?? 'public','favicon')}}"  alt="public/img">
                 <h2 class="title">{{translate('Your')}} <span class="d-block">{{translate('All Service')}}</span> <strong class="text--039D55">{{translate('in one field')}}....</strong></h2>
             </div>
@@ -205,9 +205,9 @@
       </div>
       <div class="modal-body">
         <div class="forget-pass-content">
-            <img src="{{asset('/public/assets/admin/img/send-mail.svg')}}" alt="">
+            <img src="{{asset('/assets/admin/img/send-mail.svg')}}" alt="">
             <!-- After Succeed -->
-            <!-- <img src="{{asset('/public/assets/admin/img/sent-mail.svg')}}" alt=""> -->
+            <!-- <img src="{{asset('/assets/admin/img/sent-mail.svg')}}" alt=""> -->
             <h4>
                 {{ translate('Send_Mail_to_Your_Email') }} ?
             </h4>
@@ -232,9 +232,9 @@
       </div>
       <div class="modal-body">
         <div class="forget-pass-content">
-            <img src="{{asset('/public/assets/admin/img/send-mail.svg')}}" alt="">
+            <img src="{{asset('/assets/admin/img/send-mail.svg')}}" alt="">
             <!-- After Succeed -->
-            <!-- <img src="{{asset('/public/assets/admin/img/sent-mail.svg')}}" alt=""> -->
+            <!-- <img src="{{asset('/assets/admin/img/sent-mail.svg')}}" alt=""> -->
             <h4>
                 {{ translate('messages.Send_Mail_to_Your_Email') }} ?
             </h4>
@@ -260,7 +260,7 @@
         <div class="modal-body">
           <div class="forget-pass-content">
               <!-- After Succeed -->
-              <img src="{{asset('/public/assets/admin/img/sent-mail.svg')}}" alt="">
+              <img src="{{asset('/assets/admin/img/sent-mail.svg')}}" alt="">
               <h4>
                 {{ translate('A mail has been sent to your registered email') }}!
               </h4>

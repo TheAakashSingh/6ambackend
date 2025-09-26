@@ -198,7 +198,7 @@
         });
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('storage/app/public/campaign')}}/{{$campaign->image}}');
+            $('#viewer').attr('src','{{asset('storage/app/campaign')}}/{{$campaign->image}}');
         })
     </script>
 @endpush

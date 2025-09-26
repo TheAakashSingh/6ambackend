@@ -23,7 +23,7 @@
                                 href="{{ route('admin.store.view', ['store' => $store->id, 'tab' => 'item']) }}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{ asset('/public/assets/admin/img/store_items/fi_9752284.png') }}"
+                                        <img src="{{ asset('/assets/admin/img/store_items/fi_9752284.png') }}"
                                             alt="dashboard" class="oder--card-icon">
                                         <span>{{ translate('All_Items') }}</span>
                                     </h6>
@@ -40,7 +40,7 @@
                                 href="{{ route('admin.store.view', ['store' => $store->id, 'tab' => 'item', 'sub_tab' => 'active-items']) }}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{ asset('/public/assets/admin/img/store_items/fi_10608883.png') }}"
+                                        <img src="{{ asset('/assets/admin/img/store_items/fi_10608883.png') }}"
                                             alt="dashboard" class="oder--card-icon">
                                         <span>{{ translate('messages.Active_Items') }}</span>
                                     </h6>
@@ -56,7 +56,7 @@
                                 href="{{ route('admin.store.view', ['store' => $store->id, 'tab' => 'item', 'sub_tab' => 'inactive-items']) }}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{ asset('/public/assets/admin/img/store_items/fi_10186054.png') }}"
+                                        <img src="{{ asset('/assets/admin/img/store_items/fi_10186054.png') }}"
                                             alt="dashboard" class="oder--card-icon">
                                         <span>{{ translate('messages.Inactive_Items') }}</span>
                                     </h6>
@@ -72,7 +72,7 @@
                                 href="{{ route('admin.store.view', ['store' => $store->id, 'tab' => 'item', 'sub_tab' => 'pending-items']) }}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{ asset('/public/assets/admin/img/store_items/fi_5106700.png') }}"
+                                        <img src="{{ asset('/assets/admin/img/store_items/fi_5106700.png') }}"
                                             alt="dashboard" class="oder--card-icon">
                                         <span>{{ translate('messages.Pending_for_Approval') }}</span>
                                     </h6>
@@ -88,7 +88,7 @@
                                 href="{{ route('admin.store.view', ['store' => $store->id, 'tab' => 'item', 'sub_tab' => 'rejected-items']) }}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{ asset('/public/assets/admin/img/store_items/image 89.png') }}"
+                                        <img src="{{ asset('/assets/admin/img/store_items/image 89.png') }}"
                                             alt="dashboard" class="oder--card-icon">
                                         <span>{{ translate('messages.Rejected_Items') }}</span>
                                     </h6>
@@ -388,7 +388,7 @@
                     </div>
                     @if (count($foods) === 0)
                         <div class="empty--data">
-                            <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                            <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                             <h5>
                                 {{ translate('no_data_found') }}
                             </h5>

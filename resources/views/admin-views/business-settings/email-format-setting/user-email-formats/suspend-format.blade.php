@@ -34,15 +34,15 @@
                             <h5 class="text-capitalize m-0 text--primary pl-2">
                                 {{translate('Send_Mail_on_Suspend_a_Customer')}}
                                 <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('If_Admin_suspends_a_customer’s_,_the_customer_will_get_a_suspend_mail_from_the_system.')}}">
-                                    <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Send_Mail_on_Suspend_a_Customer') }}">
+                                    <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Send_Mail_on_Suspend_a_Customer') }}">
                                 </span>
                             </h5>
                             <label class="toggle-switch toggle-switch-sm">
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                 data-id="mail-status"
                                 data-type="status"
-                                data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                 data-title-on="{{translate('Want_to_enable_Customer_suspend_mail?')}}"
                                 data-title-off="{{translate('Want_to_disable_Customer_suspend_mail?')}}"
                                 data-text-on="<p>{{translate('If_enabled,_Customer_will_receive_an_email_for_account_suspension.')}}</p>"
@@ -111,7 +111,7 @@
                                     <div>
                                         <h5 class="card-title mb-3">
                                             {{translate('Icon')}}  <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Icon_must_be_1:1.')}}">
-                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                             </span>
                                         </h5>
                                         <label class="custom-file">
@@ -130,7 +130,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">{{translate('Main_Title')}}({{ translate('messages.default') }})
                                                         <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_main_title_within_45_characters')}}">
-                                                            <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                            <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                                         </span>
                                                     </label>
                                                     <input type="text" maxlength="45" name="title[]" value="{{ $data?->getRawOriginal('title') }}" data-id="mail-title" placeholder="{{ translate('Order_has_been_placed_successfully.') }}" class="form-control">
@@ -167,7 +167,7 @@
                                                     <div class="form-group">
                                                        <label class="form-label">{{translate('Main_Title')}}({{strtoupper($lang)}})
                                                             <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_45_characters')}}">
-                                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                                             </span>
                                                         </label>
                                                         <input type="text" maxlength="45" name="title[]"  placeholder="{{ translate('Order_has_been_placed_successfully.') }}" class="form-control" value="{{$translate[$lang]['title']??''}}">
@@ -191,7 +191,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">{{translate('Main_Title')}}
                                                     <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_45_characters')}}">
-                                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
+                                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.show_hide_food_menu') }}">
                                                             </span></label>
                                                     <input type="text" maxlength="45" name="title[]" placeholder="{{ translate('Order_has_been_placed_successfully.') }}"class="form-control">
                                                 </div>

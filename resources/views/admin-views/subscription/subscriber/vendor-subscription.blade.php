@@ -14,7 +14,7 @@ active
             <div class="d-flex flex-wrap justify-content-between align-items-center py-2">
                 <div class="flex-grow-1">
                     <div class="d-flex align-items-start">
-                        <img src="{{asset('/public/assets/admin/img/store.png')}}" width="24" alt="img">
+                        <img src="{{asset('/assets/admin/img/store.png')}}" width="24" alt="img">
                         <div class="w-0 flex-grow pl-2">
                             <h1 class="page-header-title">{{ $store->name }} {{translate('Subscription')}} &nbsp; &nbsp;
                                 @if($store?->status == 0 &&  $store?->vendor?->status == 0)
@@ -205,7 +205,7 @@ active
 
                         <div>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check.png')}}" alt="">
                                 @if ( $store?->store_sub_update_application?->max_order == 'unlimited' )
                                 <span class="form-check-label text-dark">{{ $store?->module->module_type == 'rental' && addon_published_status('Rental') ? translate('messages.unlimited_trips') : translate('messages.unlimited_orders') }}</span>
                                 @else
@@ -220,9 +220,9 @@ active
                         <div>
                             <div class="d-flex align-items-center gap-2">
                                 @if ( $store?->store_sub_update_application?->pos == 1 )
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check.png')}}" alt="">
                                 @else
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
                                 @endif
                                 <span class="form-check-label text-dark">{{ translate('messages.POS') }}</span>
                             </div>
@@ -232,9 +232,9 @@ active
                         <div>
                             <div class="d-flex align-items-center gap-2">
                                 @if ( $store?->store_sub_update_application?->mobile_app == 1 )
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check.png')}}" alt="">
                                 @else
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
                                 @endif
                                 <span class="form-check-label text-dark">{{ translate('messages.Mobile_App') }}</span>
                             </div>
@@ -244,9 +244,9 @@ active
                         <div>
                             <div class="d-flex align-items-center gap-2">
                                 @if ( $store?->store_sub_update_application?->self_delivery == 1 )
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check.png')}}" alt="">
                                 @else
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
                                 @endif
                                 <span class="form-check-label text-dark">{{ translate('messages.self_delivery') }}</span>
                             </div>
@@ -255,7 +255,7 @@ active
 
                         <div>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check.png')}}" alt="">
                                 @if ( $store?->store_sub_update_application?->max_product == 'unlimited' )
                                 <span class="form-check-label text-dark">{{ $store?->module->module_type == 'rental' && addon_published_status('Rental') ? translate('messages.unlimited_Upload') : translate('messages.unlimited_item_Upload')
                                     }}</span>
@@ -269,9 +269,9 @@ active
                         <div>
                             <div class="d-flex align-items-center gap-2">
                                 @if ( $store?->store_sub_update_application?->review == 1 )
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check.png')}}" alt="">
                                 @else
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
                                 @endif
                                 <span class="form-check-label text-dark">{{ translate('messages.review') }}</span>
                             </div>
@@ -280,9 +280,9 @@ active
                         <div>
                             <div class="d-flex align-items-center gap-2">
                                 @if ( $store?->store_sub_update_application?->chat == 1 )
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check.png')}}" alt="">
                                 @else
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/check-1.png')}}" alt="">
                                 @endif
                                 <span class="form-check-label text-dark">{{ translate('messages.chat') }}</span>
                             </div>
@@ -464,7 +464,7 @@ active
                     <div class="max-349 mx-auto mb-20">
                         <div>
                             <div class="text-center">
-                                <img src="{{asset('/public/assets/admin/img/subscription-plan/package-status-disable.png')}}" class="mb-20">
+                                <img src="{{asset('/assets/admin/img/subscription-plan/package-status-disable.png')}}" class="mb-20">
                                 <h5 class="modal-title" ></h5>
                             </div>
                             <div class="text-center">

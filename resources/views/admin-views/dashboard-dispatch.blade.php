@@ -12,7 +12,7 @@
         <div class="page-header">
             <div class="d-flex flex-wrap gap-2 justify-content-between py-2">
                 <div class="d-flex align-items-center flex-grow-1">
-                    <img src="{{asset('/public/assets/admin/img/new-img/users.svg')}}" alt="img">
+                    <img src="{{asset('/assets/admin/img/new-img/users.svg')}}" alt="img">
                     <div class="w-0 flex-grow pl-3">
                         <h1 class="page-header-title mb-1">{{translate('Dispatch Overview')}}</h1>
                         <p class="page-header-text text-dark m-0">

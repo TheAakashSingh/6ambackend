@@ -152,8 +152,8 @@
                                                     <span id="earning_delivery_img" class="remove_image_button mt-4 dynamic-checkbox"
                                                           data-id="earning_delivery_img"
                                                           data-type="status"
-                                                          data-image-on='{{asset('/public/assets/admin/img/modal')}}/mail-success.png'
-                                                          data-image-off="{{asset('/public/assets/admin/img/modal')}}/mail-warning.png"
+                                                          data-image-on='{{asset('/assets/admin/img/modal')}}/mail-success.png'
+                                                          data-image-off="{{asset('/assets/admin/img/modal')}}/mail-warning.png"
                                                           data-title-on="{{translate('Important!')}}"
                                                           data-title-off="{{translate('Warning!')}}"
                                                           data-text-on="<p>{{translate('Are_you_sure_you_want_to_remove_this_image')}}</p>"

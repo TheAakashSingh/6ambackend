@@ -40,7 +40,7 @@
                         <div
                             class="bg--secondary rounded p-15 d-flex align-items-center justify-content-between gap-2 flex-wrap">
                             <div class="d-flex align-items-center gap-2 font-semibold title-clr">
-                                <img src="{{ asset('/public/assets/admin/img/t-total-order.png') }}" alt="img">
+                                <img src="{{ asset('/assets/admin/img/t-total-order.png') }}" alt="img">
                                 {{ translate('Total Orders') }}
                             </div>
                             <h3 class="theme-clr fw-bold mb-0">{{ $totalOrders }}</h3>
@@ -50,7 +50,7 @@
                         <div
                             class="bg--secondary rounded p-15 d-flex align-items-center justify-content-between gap-2 flex-wrap">
                             <div class="d-flex align-items-center gap-2 font-semibold title-clr">
-                                <img src="{{ asset('/public/assets/admin/img/t-toal-amount.png') }}" alt="img">
+                                <img src="{{ asset('/assets/admin/img/t-toal-amount.png') }}" alt="img">
                                 {{ translate('Total Order Amount') }}
                             </div>
                             <h3 class="text-success fw-bold mb-0">
@@ -61,7 +61,7 @@
                         <div
                             class="bg--secondary rounded p-15 d-flex align-items-center justify-content-between gap-2 flex-wrap">
                             <div class="d-flex align-items-center gap-2 font-semibold title-clr">
-                                <img src="{{ asset('/public/assets/admin/img/t-tax-amount.png') }}" alt="img">
+                                <img src="{{ asset('/assets/admin/img/t-tax-amount.png') }}" alt="img">
                                 {{ translate('Total Tax Amount') }}
                             </div>
                             <h3 class="text-danger fw-bold mb-0">
@@ -197,7 +197,7 @@
                 </div>
                 @if (count($orders) === 0)
                     <div class="empty--data">
-                        <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                        <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                         <h5>
                             {{ translate('no_data_found') }}
                         </h5>

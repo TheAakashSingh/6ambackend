@@ -125,7 +125,7 @@
             </div>
             @if(count($brands) === 0)
             <div class="empty--data">
-                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                 <h5>
                     {{translate('no_data_found')}}
                 </h5>
@@ -250,7 +250,7 @@
                                 <label class="text-center position-relative d-inline-block mb-3">
                                     <img class="img--176 border" id="viewer"
                                             @if(isset($category))
-                                                src="{{asset('storage/app/public/category')}}/{{$category['image']}}"
+                                                src="{{asset('storage/app/category')}}/{{$category['image']}}"
                                             @else
                                                 src="{{asset('assets/admin/img/upload-img.png')}}"
                                             @endif
@@ -312,7 +312,7 @@
                                 </div>
 
                                 <div class="alert fs-12 alert-primary-light text-dark mb-0  mt-md-0 add_text_mute mt-2"  role="alert">
-                                    <img src="{{ asset('/public/assets/admin/img/lnfo_light.png') }}" alt="">
+                                    <img src="{{ asset('/assets/admin/img/lnfo_light.png') }}" alt="">
                                     {{translate('Currently, this brand is active in all modules of the')}} <b>{{ Config::get('module.current_module_name') }}</b> {{ translate('Module_Type') }}
                                 </div>
                             </div>

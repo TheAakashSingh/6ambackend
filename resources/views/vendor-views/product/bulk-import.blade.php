@@ -137,7 +137,7 @@
                     <div class="card-header border-0 p-0">
                         <div class="alert w-100 alert-soft-primary alert-dismissible fade show d-flex m-0" role="alert">
                             <div>
-                                <img src="{{asset('/public/assets/admin/img/icons/intel.png')}}" width="22" alt="">
+                                <img src="{{asset('/assets/admin/img/icons/intel.png')}}" width="22" alt="">
                             </div>
                             <div class="w-0 flex-grow-1 pl-3">
                                 <strong>{{ translate('Attention!') }}</strong>
@@ -171,15 +171,15 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <label for="">{{ translate('messages.Generated_varient') }} <span class="form-label-secondary text-danger " data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.This_field_is_for_geenrated_variation._copy_them_&_paste_into_excel_sheet') }} "><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="Veg non veg"> * </span></label>
+                                <label for="">{{ translate('messages.Generated_varient') }} <span class="form-label-secondary text-danger " data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.This_field_is_for_geenrated_variation._copy_them_&_paste_into_excel_sheet') }} "><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="Veg non veg"> * </span></label>
                                 <textarea name="" id="variation_output" class="form-control" rows="5" readonly></textarea>
                             </div>
                             <div class="col-md-4">
-                                <label for="">{{ translate('messages.Generated_choice_option') }} <span class="form-label-secondary text-danger " data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Choice_option_is_required_if_you_are_using_product_variation') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="Veg non veg"> * </span></label>
+                                <label for="">{{ translate('messages.Generated_choice_option') }} <span class="form-label-secondary text-danger " data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Choice_option_is_required_if_you_are_using_product_variation') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="Veg non veg"> * </span></label>
                                 <textarea name="" id="choice_output" class="form-control" rows="5" readonly></textarea>
                             </div>
                             <div class="col-md-4">
-                                <label for="">{{ translate('messages.Generated_attributes_field') }} <span class="form-label-secondary text-danger " data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Attributes_is_required_if_you_are_using_product_variation') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="Veg non veg"> * </span></label>
+                                <label for="">{{ translate('messages.Generated_attributes_field') }} <span class="form-label-secondary text-danger " data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Attributes_is_required_if_you_are_using_product_variation') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="Veg non veg"> * </span></label>
                                 <textarea name="" id="attributes" class="form-control" rows="5" readonly></textarea>
                             </div>
                         </div>

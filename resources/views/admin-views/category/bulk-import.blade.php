@@ -27,7 +27,7 @@
                                             {{translate('Download_Excel_File')}}
                                         </div>
                                     </div>
-                                    <img src="{{asset('/public/assets/admin/img/bulk-import-1.png')}}" alt="">
+                                    <img src="{{asset('/assets/admin/img/bulk-import-1.png')}}" alt="">
                                 </div>
                                 <h4>{{ translate('Instruction') }}</h4>
                                 <ul class="m-0 pl-4">
@@ -53,7 +53,7 @@
                                             {{translate('Match_Spread_sheet_data_according_to_instruction')}}
                                         </div>
                                     </div>
-                                    <img src="{{asset('/public/assets/admin/img/bulk-import-2.png')}}" alt="">
+                                    <img src="{{asset('/assets/admin/img/bulk-import-2.png')}}" alt="">
                                 </div>
                                 <h4>{{ translate('Instruction') }}</h4>
                                 <ul class="m-0 pl-4">
@@ -84,7 +84,7 @@
                                             {{translate('Validate_data_and_complete_import')}}
                                         </div>
                                     </div>
-                                    <img src="{{asset('/public/assets/admin/img/bulk-import-3.png')}}" alt="">
+                                    <img src="{{asset('/assets/admin/img/bulk-import-3.png')}}" alt="">
                                 </div>
                                   <h4>{{ translate('Instruction') }}</h4>
                                 <ul class="m-0 pl-4">
@@ -149,7 +149,7 @@
                                     <div class="form-group inputDnD input_image input_image_edit position-relative">
                                         <div class="upload-text">
                                             <div>
-                                                <img src="{{asset('/public/assets/admin/img/bulk-import-3.png')}}" alt="">
+                                                <img src="{{asset('/assets/admin/img/bulk-import-3.png')}}" alt="">
                                             </div>
                                             <div class="filename">{{translate('Must_be_Excel_files_using_our_Excel_template_above')}}</div>
                                         </div>

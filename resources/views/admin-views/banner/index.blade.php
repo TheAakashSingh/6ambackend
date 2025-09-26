@@ -205,7 +205,7 @@
                                     <td>
                                         <span class="media align-items-center">
                                             <img class="img--ratio-3 w-auto h--50px rounded mr-2 onerror-image" src="{{ $banner['image_full_url'] }}"
-                                                data-onerror-image="{{asset('/public/assets/admin/img/900x400/img1.jpg')}}" alt="{{$banner->name}} image">
+                                                data-onerror-image="{{asset('/assets/admin/img/900x400/img1.jpg')}}" alt="{{$banner->name}} image">
                                             <div class="media-body">
                                                 <h5 title="{{ $banner['title'] }}" class="text-hover-primary mb-0">{{Str::limit($banner['title'], 25, '...')}}</h5>
                                             </div>
@@ -222,8 +222,8 @@
                                             <input type="checkbox"
                                             data-id="featuredCheckbox{{$banner->id}}"
                                             data-type="status"
-                                            data-image-on="{{ asset('/public/assets/admin/img/modal/basic_campaign_on.png') }}"
-                                            data-image-off="{{ asset('/public/assets/admin/img/modal/basic_campaign_off.png') }}"
+                                            data-image-on="{{ asset('/assets/admin/img/modal/basic_campaign_on.png') }}"
+                                            data-image-off="{{ asset('/assets/admin/img/modal/basic_campaign_off.png') }}"
                                             data-title-on="{{ translate('By_Turning_ON_As_Featured!') }}"
                                             data-title-off="{{ translate('By_Turning_OFF_As_Featured!') }}"
                                             data-text-on="<p>{{ translate('If_you_turn_on_this_featured,_then_promotional_banner_will_show_on_website_and_user_app_with_store_or_item.') }}</p>"
@@ -245,8 +245,8 @@
                                             <input type="checkbox"
                                             data-id="statusCheckbox{{$banner->id}}"
                                             data-type="status"
-                                            data-image-on="{{ asset('/public/assets/admin/img/modal/basic_campaign_on.png') }}"
-                                            data-image-off="{{ asset('/public/assets/admin/img/modal/basic_campaign_off.png') }}"
+                                            data-image-on="{{ asset('/assets/admin/img/modal/basic_campaign_on.png') }}"
+                                            data-image-off="{{ asset('/assets/admin/img/modal/basic_campaign_off.png') }}"
                                             data-title-on="{{ translate('By_Turning_ON_Banner!') }}"
                                             data-title-off="{{ translate('By_Turning_OFF_Banner!') }}"
                                             data-text-on="<p>{{ translate('If_you_turn_on_this_status,_it_will_show_on_user_website_and_app.') }}</p>"
@@ -288,7 +288,7 @@
                     </div>
                     @if(count($banners) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

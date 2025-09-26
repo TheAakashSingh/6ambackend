@@ -3557,26 +3557,26 @@ class Helpers
             'brand' => asset('assets/admin/img/100x100/2.jpg'),
             'upload_image' => asset('assets/admin/img/upload-img.png'),
             'store/cover' => asset('assets/admin/img/100x100/2.jpg'),
-            'upload_image_4' => asset('/public/assets/admin/img/upload-4.png'),
+            'upload_image_4' => asset('/assets/admin/img/upload-4.png'),
             'promotional_banner' => asset('assets/admin/img/100x100/2.jpg'),
             'admin_feature' => asset('assets/admin/img/100x100/2.jpg'),
-            'aspect_1' => asset('/public/assets/admin/img/aspect-1.png'),
+            'aspect_1' => asset('/assets/admin/img/aspect-1.png'),
             'special_criteria' => asset('assets/admin/img/100x100/2.jpg'),
             'download_user_app_image' => asset('assets/admin/img/100x100/2.jpg'),
             'reviewer_image' => asset('assets/admin/img/100x100/2.jpg'),
-            'fixed_header_image' => asset('/public/assets/admin/img/aspect-1.png'),
-            'header_icon' => asset('/public/assets/admin/img/aspect-1.png'),
+            'fixed_header_image' => asset('/assets/admin/img/aspect-1.png'),
+            'header_icon' => asset('/assets/admin/img/aspect-1.png'),
             'available_zone_image' => asset('assets/admin/img/100x100/2.jpg'),
-            'why_choose' => asset('/public/assets/admin/img/aspect-1.png'),
-            'header_banner' => asset('/public/assets/admin/img/aspect-1.png'),
+            'why_choose' => asset('/assets/admin/img/aspect-1.png'),
+            'header_banner' => asset('/assets/admin/img/aspect-1.png'),
             'reviewer_company_image' => asset('assets/admin/img/100x100/2.jpg'),
             'module' => asset('assets/admin/img/100x100/2.jpg'),
-            'parcel_category' => asset('/public/assets/admin/img/400x400/img2.jpg'),
-            'favicon' => asset('/public/assets/admin/img/favicon.png'),
+            'parcel_category' => asset('/assets/admin/img/400x400/img2.jpg'),
+            'favicon' => asset('/assets/admin/img/favicon.png'),
             'seller' => asset('assets/back-end/img/160x160/img1.jpg'),
-            'upload_placeholder' => asset('/public/assets/admin/img/upload-placeholder.png'),
-            'payment_modules/gateway_image' => asset('/public/assets/admin/img/payment/placeholder.png'),
-            'email_template' => asset('/public/assets/admin/img/blank1.png'),
+            'upload_placeholder' => asset('/assets/admin/img/upload-placeholder.png'),
+            'payment_modules/gateway_image' => asset('/assets/admin/img/payment/placeholder.png'),
+            'email_template' => asset('/assets/admin/img/blank1.png'),
         ];
 
         try {
@@ -3590,7 +3590,7 @@ class Helpers
         }
 
         if ($data && Storage::disk('public')->exists($path .'/'. $data)) {
-            return asset('storage/app/public') . '/' . $path . '/' . $data;
+            return asset('storage/app') . '/' . $path . '/' . $data;
         }
 
         if (request()->is('api/*')) {

@@ -59,7 +59,7 @@
                         <div class="d-flex flex-wrap gap-3">
                             <div class="color-card flex-column align-items-center justify-content-center color-2 flex-grow-1">
                                 <div class="img-box">
-                                    <img class="resturant-icon w--30" src="{{asset('/public/assets/admin/img/icons/order-icon-1.png')}}" alt="">
+                                    <img class="resturant-icon w--30" src="{{asset('/assets/admin/img/icons/order-icon-1.png')}}" alt="">
                                 </div>
                                 <div class="d-flex flex-column align-items-center">
                                     <h2 class="title"> {{ $orders->total() }} </h2>
@@ -70,7 +70,7 @@
                             </div>
                             <div class="color-card flex-column align-items-center justify-content-center color-5 flex-grow-1">
                                 <div class="img-box">
-                                    <img class="resturant-icon w--30" src="{{asset('/public/assets/admin/img/icons/order-icon-2.png')}}" alt="">
+                                    <img class="resturant-icon w--30" src="{{asset('/assets/admin/img/icons/order-icon-2.png')}}" alt="">
                                 </div>
                                 <div class="d-flex flex-column align-items-center">
                                     <h2 class="title"> {{ \App\CentralLogics\Helpers::format_currency($total_order_amount[0]->total_order_amount) }} </h2>
@@ -89,7 +89,7 @@
                         <div class="d-flex flex-wrap gap-3">
                             <div class="color-card flex-column align-items-center justify-content-center color-7 flex-grow-1">
                                 <div class="img-box">
-                                    <img class="resturant-icon w--30" src="{{asset('/public/assets/admin/img/icons/order-icon-3.png')}}" alt="transactions">
+                                    <img class="resturant-icon w--30" src="{{asset('/assets/admin/img/icons/order-icon-3.png')}}" alt="transactions">
                                 </div>
                                 <div class="d-flex flex-column align-items-center">
                                     <h2 class="title"> {{$customer->wallet_balance??0}} </h2>
@@ -100,7 +100,7 @@
                             </div>
                             <div class="color-card flex-column align-items-center justify-content-center color-4 flex-grow-1">
                                 <div class="img-box">
-                                    <img class="resturant-icon w--30" src="{{asset('/public/assets/admin/img/icons/order-icon-4.png')}}" alt="transactions">
+                                    <img class="resturant-icon w--30" src="{{asset('/assets/admin/img/icons/order-icon-4.png')}}" alt="transactions">
                                 </div>
                                 <div class="d-flex flex-column align-items-center">
                                     <h2 class="title"> {{$customer->loyalty_point??0}} </h2>
@@ -301,7 +301,7 @@
                     </div>
                     @if(count($orders) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

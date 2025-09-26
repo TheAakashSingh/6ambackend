@@ -96,7 +96,7 @@
                                     <span class="pr-2">{{ translate('messages.scheduled_order') }}<span
                                             class="input-label-secondary" data-toggle="tooltip" data-placement="right"
                                             data-original-title="{{ translate('When_enabled,_store_owner_can_take_scheduled_orders_from_customers.') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.scheduled_order_hint') }}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url "
                                         data-url="{{ route('vendor.business-settings.toggle-settings', [$store->id, $store->schedule_order ? 0 : 1, 'schedule_order']) }}"
@@ -115,7 +115,7 @@
                                     <span class="pr-2">{{ translate('messages.delivery') }}<span
                                             class="input-label-secondary" data-toggle="tooltip" data-placement="right"
                                             data-original-title="{{ translate('When_enabled,_customers_can_make_home_delivery_orders_from_this_store.') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.home_delivery_hint') }}"></span></span>
                                     <input type="checkbox" name="delivery" class="toggle-switch-input redirect-url "
                                         data-url="{{ route('vendor.business-settings.toggle-settings', [$store->id, $store->delivery ? 0 : 1, 'delivery']) }}"
@@ -134,7 +134,7 @@
                                     <span class="pr-2 text-capitalize">{{ translate('messages.take_away') }}<span
                                             class="input-label-secondary" data-toggle="tooltip" data-placement="right"
                                             data-original-title="{{ translate('When_enabled,_customers_can_place_takeaway_orders_from_this_store.') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.take_away_hint') }}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url "
                                         data-url="{{ route('vendor.business-settings.toggle-settings', [$store->id, $store->take_away ? 0 : 1, 'take_away']) }}"
@@ -261,8 +261,8 @@
                                             </span>
                                         </span>
                                         <input type="checkbox" data-id="halal_tag_status" data-type="status"
-                                            data-image-on="{{ asset('/public/assets/admin/img/modal/schedule-on.png') }}"
-                                            data-image-off="{{ asset('/public/assets/admin/img/modal/schedule-off.png') }}"
+                                            data-image-on="{{ asset('/assets/admin/img/modal/schedule-on.png') }}"
+                                            data-image-off="{{ asset('/assets/admin/img/modal/schedule-off.png') }}"
                                             data-title-on="{{ translate('Want_to_enable_halal_tag_status_for_this_restaurant?') }}"
                                             data-title-off="{{ translate('Want_to_disable_halal_tag_status_for_this_restaurant?') }}"
                                             data-text-on="<p>{{ translate('If_enabled,_customers_can_see_halal_tag_on_product') }}"
@@ -305,7 +305,7 @@
                                 for="minimum_order">{{ translate('messages.minimum_order_amount') }}<span
                                     class="input-label-secondary" data-toggle="tooltip" data-placement="right"
                                     data-original-title="{{ translate('Specify_the_minimum_order_amount_required_for_customers_when_ordering_from_this_store.') }}"><img
-                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                         alt="{{ translate('messages.self_delivery_hint') }}"></span></label>
                             <input type="number" id="minimum_order" name="minimum_order" step="0.01" min="0"
                                 max="999999999" class="form-control" placeholder="100"
@@ -317,7 +317,7 @@
                                     for="order_place_to_schedule_interval">{{ translate('messages.minimum_processing_time') }}<span
                                         class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                         data-original-title="{{ translate('messages.minimum_processing_time_warning') }}"><img
-                                            src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                            src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                             alt="{{ translate('messages.minimum_processing_time_warning') }}"></span></label>
                                 <input type="text" id="order_place_to_schedule_interval"
                                     name="order_place_to_schedule_interval" class="form-control"
@@ -329,7 +329,7 @@
                                 for="minimum_delivery_time">{{ translate('messages.approx_delivery_time') }}<span
                                     class="input-label-secondary" data-toggle="tooltip" data-placement="right"
                                     data-original-title="{{ translate('Set_the_total_time_to_deliver_products.') }}"><img
-                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                         alt="{{ translate('Set_the_total_time_to_deliver_products.') }}"></span></label>
                             <div class="input-group">
                                 <input type="number" id="minimum_delivery_time" name="minimum_delivery_time"
@@ -385,7 +385,7 @@
                                         <span data-toggle="tooltip" data-placement="right"
                                             data-original-title="{{ translate('It will add a limite on total delivery charge.') }}"
                                             class="input-label-secondary"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.maximum_delivery_charge') }}"></span>
                                     </label>
                                     <input type="number" id="maximum_shipping_charge" name="maximum_shipping_charge"
@@ -403,7 +403,7 @@
                                         <span data-toggle="tooltip" data-placement="right"
                                             data-original-title="{{ translate('When_the_stock_of_a_product_reaches_its_minimum_value_that_you_have_set,_you_will_receive_a_warning_to_update_the_stock._Additionally,_these_products_will_appear_in_the_Admin’s_Low_Stock_list.') }}"
                                             class="input-label-secondary"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.Minimum_stock_for_warning') }}"></span>
                                     </label>
                                     <input type="number" id="minimum_stock_for_warning" name="minimum_stock_for_warning"
@@ -421,7 +421,7 @@
                                     <span>{{ translate('messages.GST') }} <span class="form-label-secondary"
                                             data-toggle="tooltip" data-placement="right"
                                             data-original-title="{{ translate('messages.If GST is enable, GST number will show in invoice') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.gst_status') }}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input" name="gst_status" id="gst_status"
                                         value="1" {{ $store->gst_status ? 'checked' : '' }}>
@@ -444,11 +444,11 @@
                                         <span>{{ translate('messages.extra_packaging_charge_amount') }} <span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                                 data-original-title="{{ translate('By_enabling_the_status_customer_will_get_the_option_for_choosing_extra_packaging_charge_when_placing_order._for_extra_package_offer') }}"><img
-                                                    src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                    src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                     alt="{{ translate('By_enabling_the_status_customer_will_get_the_option_for_choosing_extra_packaging_charge_when_placing_order._for_extra_package_offer') }}"></span></span>
                                         <input type="checkbox" data-id="extra_packaging_status" data-type="status"
-                                            data-image-on="{{ asset('/public/assets/admin/img/modal/schedule-on.png') }}"
-                                            data-image-off="{{ asset('/public/assets/admin/img/modal/schedule-off.png') }}"
+                                            data-image-on="{{ asset('/assets/admin/img/modal/schedule-on.png') }}"
+                                            data-image-off="{{ asset('/assets/admin/img/modal/schedule-off.png') }}"
                                             data-title-on="{{ translate('Want_to_enable_extra_packaging_status_for_this_restaurant?') }}"
                                             data-title-off="{{ translate('Want_to_disable_extra_packaging_status_for_this_restaurant?') }}"
                                             data-text-on="<p>{{ translate('If_enabled,_customers_have_to_pay_extra_packaging_charge_on_order') }}"

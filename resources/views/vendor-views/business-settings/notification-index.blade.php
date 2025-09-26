@@ -6,7 +6,7 @@
 
         <!-- Title -->
         <div class="mb-3 d-flex align-items-start gap-2">
-            <img src="{{asset('/public/assets/admin/img/bell-2.png')}}" alt="">
+            <img src="{{asset('/assets/admin/img/bell-2.png')}}" alt="">
             <div class="w-0 flex-grow mb-2">
                  <h1 class="page-header-title m-0">{{ translate('Notification_Setup') }}</h1>
                 {{ translate('From here you setup what types of notification you can receive from') }} {{ $business_name }}

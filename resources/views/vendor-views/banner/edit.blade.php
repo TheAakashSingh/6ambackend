@@ -46,7 +46,7 @@
                                         <div class="img">
                                             <img src="{{$banner['image_full_url']}}"
                                             id="viewer"
-                                                 data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}"
+                                                 data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}"
                                                   class="vertical-img mw-100 vertical onerror-image" alt="">
                                         </div>
                                             <input type="file" name="image"  hidden>
@@ -77,7 +77,7 @@
         <script>
             "use strict";
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('storage/app/public/banner')}}/{{$banner['image']}}');
+                $('#viewer').attr('src','{{asset('storage/app/banner')}}/{{$banner['image']}}');
             })
         </script>
 

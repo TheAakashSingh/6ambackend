@@ -23,28 +23,28 @@
                 <div class="resturant-card card--bg-1">
                     <h4 class="title">{{$total_store}}</h4>
                     <span class="subtitle">{{translate('messages.total_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/total-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/total-store.png')}}" alt="store">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
                 <div class="resturant-card card--bg-2">
                     <h4 class="title">{{$active_stores}}</h4>
                     <span class="subtitle">{{translate('messages.active_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/active-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/active-store.png')}}" alt="store">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
                 <div class="resturant-card card--bg-3">
                     <h4 class="title">{{$inactive_stores}}</h4>
                     <span class="subtitle">{{translate('messages.inactive_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/close-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/close-store.png')}}" alt="store">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
                 <div class="resturant-card card--bg-4">
                     <h4 class="title">{{$recent_stores}}</h4>
                     <span class="subtitle">{{translate('messages.newly_joined_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/add-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/add-store.png')}}" alt="store">
                 </div>
             </div>
         </div>
@@ -263,7 +263,7 @@
                 </div>
                 @if(count($stores) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

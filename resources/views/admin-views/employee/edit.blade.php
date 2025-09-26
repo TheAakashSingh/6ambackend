@@ -101,7 +101,7 @@
                             </div>
                             <div class="text-center py-3 my-auto">
                                 <img class="img--100 onerror-image" id="viewer"
-                                data-onerror-image="{{asset('/public/assets/admin/img/admin.png')}}"
+                                data-onerror-image="{{asset('/assets/admin/img/admin.png')}}"
                                 src="{{ $employee['image_full_url'] }}" alt="Employee thumbnail"/>
                             </div>
                             <div class="custom-file">
@@ -137,7 +137,7 @@
                     <div class="col-md-4">
                         <div class="js-form-message form-group mb-0">
                             <label class="input-label" for="signupSrPassword">{{translate('messages.password')}}<span class="form-label-secondary" data-toggle="tooltip" data-placement="top"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
 
                             <div class="input-group input-group-merge">
                                 <input type="password" class="js-toggle-password form-control" name="password" id="signupSrPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"
@@ -217,7 +217,7 @@
         });
     });
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src', "{{asset('storage/app/public/admin')}}/{{$employee['image']}}') }}");
+            $('#viewer').attr('src', "{{asset('storage/app/admin')}}/{{$employee['image']}}') }}");
             $('#customFileUpload').val(null);
             $('#zone_id').val("{{ $employee->zone_id  }}").trigger('change');
             $('#role_id').val("{{ $employee['role_id'] }}").trigger('change');

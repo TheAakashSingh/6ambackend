@@ -201,7 +201,7 @@
                     <div class="col-md-6">
                         <div class="bg-opacity-primary-10 rounded p-20 d-flex align-items-center gap-2 flex-wrap">
                             <div class="d-flex align-items-center gap-3 title-clr">
-                                <img src="{{ asset('/public/assets/admin/img/t-toal-amount.png') }}" alt="img">
+                                <img src="{{ asset('/assets/admin/img/t-toal-amount.png') }}" alt="img">
                                 {{ translate('Total Income') }}
                             </div>
                             <h3 class="theme-clr fw-bold mb-0">
@@ -211,7 +211,7 @@
                     <div class="col-md-6">
                         <div class="bg-opacity-warning-10 rounded p-20 d-flex align-items-center gap-2 flex-wrap">
                             <div class="d-flex align-items-center gap-3 title-clr">
-                                <img src="{{ asset('/public/assets/admin/img/t-tax-amount.png') }}" alt="img">
+                                <img src="{{ asset('/assets/admin/img/t-tax-amount.png') }}" alt="img">
                                 {{ translate('Total Tax') }}
                             </div>
                             <h3 class="text-danger fw-bold mb-0">
@@ -335,7 +335,7 @@
                                 <tr>
                                     <td colspan="5" class="py-5">
                                         <div class="text-center max-w-700 mx-auto py-5">
-                                            <img src="{{ asset('/public/assets/admin/img/tax-error.png') }}"
+                                            <img src="{{ asset('/assets/admin/img/tax-error.png') }}"
                                                 alt="img" class="mb-20">
                                             <h4 class="mb-2">{{ translate('No Tax Report Generated') }}</h4>
                                             <p class="mb-0 fz-12px">

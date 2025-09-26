@@ -436,7 +436,7 @@
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="{{ asset('Modules/TaxModule/public/assets/admin/img/status-ons.png') }}" class="mb-20"
+                    <img src="{{ asset('Modules/TaxModule/assets/admin/img/status-ons.png') }}" class="mb-20"
                         alt="">
                     <h3 class="title-clr mb-2" id="confirmationTitle"></h3>
                     <p class="fz--14px" id="confirmationMessage"></p>
@@ -454,8 +454,8 @@
 
 
 @push('script_2')
-    <script src="{{ asset('Modules/TaxModule/public/assets/js/admin/toastr_notification.js') }}"></script>
-    <script src="{{ asset('Modules/TaxModule/public/assets/js/admin/system_taxvat.js') }}"></script>
+    <script src="{{ asset('Modules/TaxModule/assets/js/admin/toastr_notification.js') }}"></script>
+    <script src="{{ asset('Modules/TaxModule/assets/js/admin/system_taxvat.js') }}"></script>
     <script>
         $(document).on('click', '.call-demo', function () {
             @if(env('APP_MODE') =='demo')

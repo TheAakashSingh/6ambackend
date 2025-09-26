@@ -123,7 +123,7 @@
                                 <div class="text-center py-3 my-auto">
                                     <img class="img--100 rounded onerror-image" id="viewer"
                                     src="{{$deliveryMan['image_full_url'] }}"
-                                            data-onerror-image="{{asset('/public/assets/admin/img/admin.png')}}"
+                                            data-onerror-image="{{asset('/assets/admin/img/admin.png')}}"
                                             alt="delivery-man image"/>
                                 </div>
                                 <div class="custom-file">
@@ -231,7 +231,7 @@
                             <div class="js-form-message form-group mb-0">
                                 <label class="input-label" for="signupSrPassword">{{translate('messages.password')}}
                                     <span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span>
                                 </label>
 
                                 <div class="input-group input-group-merge">
@@ -350,7 +350,7 @@
         });
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('storage/app/public/delivery-man')}}/{{$deliveryMan['image']}}');
+            $('#viewer').attr('src','{{asset('storage/app/delivery-man')}}/{{$deliveryMan['image']}}');
             $("#coba").empty().spartanMultiImagePicker({
                 fieldName: 'identity_image[]',
                 maxCount: 5,

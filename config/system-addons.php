@@ -5,7 +5,7 @@
     'username' => 'siptsgcr',
     'purchase_key' => '7a7b2216-4acb-4dc6-b243-99edabf3ba66',
     'software_id' => 'MzY3NzIxMTI=',
-    'domain' => 'localhost/Backend-6amMart/public',
+    'domain' => 'localhost/Backend-6amMart',
     'software_type' => 'product',
   ),
   'vendor_panel' => 
@@ -32,7 +32,7 @@
     'username' => 'siptsgcr',
     'purchase_key' => '7a7b2216-4acb-4dc6-b243-99edabf3ba66',
     'software_id' => 'MzY3NzIxNzM=',
-    'domain' => 'localhost/Backend-6amMart/public',
+    'domain' => 'localhost/Backend-6amMart',
     'software_type' => 'addon',
   ),
   'deliveryman_app' => 
@@ -41,7 +41,7 @@
     'username' => 'siptsgcr',
     'purchase_key' => '7a7b2216-4acb-4dc6-b243-99edabf3ba66',
     'software_id' => 'MzY3NzIxNDg=',
-    'domain' => 'localhost/Backend-6amMart/public',
+    'domain' => 'localhost/Backend-6amMart',
     'software_type' => 'addon',
   ),
   'react_web' => 
@@ -50,7 +50,7 @@
     'username' => 'siptsgcr',
     'purchase_key' => '7a7b2216-4acb-4dc6-b243-99edabf3ba66',
     'software_id' => 'NDUzNzAzNTE=',
-    'domain' => 'localhost/Backend-6amMart/public',
+    'domain' => 'localhost/Backend-6amMart',
     'software_type' => 'addon',
   ),
 );

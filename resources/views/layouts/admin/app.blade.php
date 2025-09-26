@@ -799,7 +799,7 @@ $(document).on('keyup', 'input[type="tel"]', function () {
 
                                 htmlContent += '<div class="fs-16 fw-500 mb-2">' + @json(translate('Search Result')) + '</div>' +
                                     '<div class="search-list h-300 d-flex flex-column gap-2 justify-content-center align-items-center fs-16">' +
-                                        '<img width="30" class="h-auto" src="' + @json(asset('/public/assets/admin/img/modal/no-search-found.png')) + '" alt="">' + ' ' +
+                                        '<img width="30" class="h-auto" src="' + @json(asset('/assets/admin/img/modal/no-search-found.png')) + '" alt="">' + ' ' +
                                         @json(translate('No result found')) +
                                     '</div>';
 
