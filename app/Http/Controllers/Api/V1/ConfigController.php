@@ -58,7 +58,7 @@ class ConfigController extends Controller
         $data = [];
 
         foreach ($image_key as $value) {
-            $data[$value . '_storage'] = Cache::rememberForever("business_settings_config_{$value}_storage", function () use ($value) {
+            $data[$value . 'storage'] = Cache::rememberForever("business_settings_config{$value}_storage", function () use ($value) {
                 return BusinessSetting::where('key', $value)->first()?->storage[0]?->value ?? 'public';
             });
         }
@@ -173,6 +173,7 @@ class ConfigController extends Controller
                 return Vehicle::where('day_wise_price' ,'>','0')->min('day_wise_price');
             });
         }
+        $systemTax = null;
         if(addon_published_status('TaxModule')){
           $systemTax=  \Modules\TaxModule\Entities\SystemTaxSetup::where('is_active', 1)->where('is_default', 1)->first();
         }
@@ -578,11 +579,11 @@ class ConfigController extends Controller
         return response()->json(
             [
                 'base_urls' => [
-                    'header_icon_url' => asset('storage/app/header_icon'),
-                    'header_banner_url' => asset('storage/app/header_banner'),
-                    'testimonial_image_url' => asset('storage/app/reviewer_image'),
-                    'promotional_banner_url' => asset('storage/app/promotional_banner'),
-                    'business_image_url' => asset('storage/app/business_image'),
+                    'header_icon_url' => asset('storage/app/public/header_icon'),
+                    'header_banner_url' => asset('storage/app/public/header_banner'),
+                    'testimonial_image_url' => asset('storage/app/public/reviewer_image'),
+                    'promotional_banner_url' => asset('storage/app/public/promotional_banner'),
+                    'business_image_url' => asset('storage/app/public/business_image'),
                 ],
                 's3_base_urls' => [
                     'header_icon_url' => $awsBaseURL . 'header_icon',
@@ -700,9 +701,9 @@ class ConfigController extends Controller
         return response()->json(
             [
                 'base_urls' => [
-                    'fixed_header_image' => asset('storage/app/fixed_header_image'),
-                    'special_criteria_image' => asset('storage/app/special_criteria'),
-                    'download_user_app_image' => asset('storage/app/download_user_app_image'),
+                    'fixed_header_image' => asset('storage/app/public/fixed_header_image'),
+                    'special_criteria_image' => asset('storage/app/public/special_criteria'),
+                    'download_user_app_image' => asset('storage/app/public/download_user_app_image'),
                 ],
 
                 's3_base_urls' => [
